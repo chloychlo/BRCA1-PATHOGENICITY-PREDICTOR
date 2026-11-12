@@ -1,1 +1,37 @@
-# BRCA1-PATHOGENICITY-PREDICTOR
+# BRCA1 Variant Pathogenicity Prediction
+
+## Project Overview
+This repository contains a machine learning pipeline designed to predict the pathogenicity of missense variants in the **BRCA1** gene. Using a frozen snapshot of ClinVar data, the model classifies variants to help distinguish between pathogenic mutations and benign variants, addressing the challenge of Variants of Uncertain Significance (VUS).
+
+---
+
+## Dataset Description
+The project is built upon a frozen ClinVar dataset specifically filtered for single amino-acid substitutions in BRCA1 (reference transcript: `NM_007294.4`, protein: `NP_009225.1`, GRCh38 assembly).
+
+* **`brca1_clinvar_2026-10-05_reference_labels.tsv`**: High-confidence ClinVar variants (Pathogenic/Likely Pathogenic vs. Benign/Likely Benign) used as the training and cross-validation set.
+* **`brca1_clinvar_2026-10-05_predict.tsv`**: The target prediction set consisting of VUS and conflicting classifications.
+* **`brca1_clinvar_2026-10-05_all.tsv`**: Complete unfiltered dataset.
+
+---
+
+## Getting Started & Installation
+
+### Prerequisites
+* Python 3.9+
+* Pip package manager
+
+### Setup Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/your-username/brca1-pathogenicity-predictor.git](https://github.com/your-username/brca1-pathogenicity-predictor.git)
+   cd brca1-pathogenicity-predictor
+
+2. **Create a virtual environment**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+
+3. **Install depedencies**:
+   ```bash
+   pip install - r requirements.txt
