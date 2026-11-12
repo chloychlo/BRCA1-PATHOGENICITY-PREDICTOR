@@ -20,18 +20,7 @@ The project is built upon a frozen ClinVar dataset specifically filtered for sin
 * Python 3.9+
 * Pip package manager
 
-### Setup Instructions
-
-1. **Clone the repository**:
-   ```bash
-   git clone [https://github.com/your-username/brca1-pathogenicity-predictor.git](https://github.com/your-username/brca1-pathogenicity-predictor.git)
-   cd brca1-pathogenicity-predictor
-
-2. **Create a virtual environment**:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-
-3. **Install depedencies**:
+### Dependecies 
    ```bash
    pip install - r requirements.txt
+
