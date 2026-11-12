@@ -1,9 +1,10 @@
 # BRCA1 Variant Pathogenicity Prediction
 
 ## Project Overview
-This repository contains a machine learning pipeline designed to predict the pathogenicity of variants in the **BRCA1** gene in the context of the MeetEU project carried at Sorbonne Université. Using a frozen snapshot of ClinVar data, the model classifies variants to help distinguish between pathogenic mutations and benign variants, addressing the challenge of Variants of Uncertain Significance (VUS).
+This repository contains a machine learning pipeline designed to predict the pathogenicity of variants in the **BRCA1** gene in the context of the MeetEU project carried at Sorbonne Université. Using a frozen snapshot of ClinVar data, the model classifies variants to help distinguish between pathogenic mutations and benign variants, addressing the challenge of Variants of Uncertain Significance (VUS). 
 
 Note: Project in progress - beyond predicting the pathogenicity of variants, the goal of the project is to also ultimately identify what underlying mechanism is into play. 
+
 ---
 
 ## Dataset Description
