@@ -9,7 +9,7 @@ df = pd.read_csv(input_file)
 plt.style.use("seaborn-v0_8-whitegrid")
 fig, axes = plt.subplots(1, 2, figsize=(16, 6))
 fig.suptitle(
-    "Analyse Globale et Spatiale des VUS de BRCA1 (n = {})".format(len(df)),
+    "Distribution of predictions and spatial profile of variant pathogenicity of BRCA1 VUS (n = {})".format(len(df)),
     fontsize=16,
     fontweight="bold",
     y=1.02,
