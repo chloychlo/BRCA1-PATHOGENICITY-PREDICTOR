@@ -12,15 +12,14 @@ The project is built upon a frozen ClinVar dataset specifically filtered for sin
 * **`brca1_clinvar_2026-10-05_predict.tsv`**: The target prediction set consisting of VUS and conflicting classifications.
 * **`brca1_clinvar_2026-10-05_all.tsv`**: Complete unfiltered dataset.
 
----
+___
 
-## Getting Started & Installation
+## Model
+The classification pipeline is built using scikit-learn:
 
-### Prerequisites
-* Python 3.9+
-* Pip package manager
-
-### Dependecies 
-   ```bash
-   pip install - r requirements.txt
-
+**Model**: Random Forest classifier (`RandomForestClassifier`)
+**Library**: `scikit-learn` v1.2.0
+**Hyperparameters**:
+* `n_estimators=100`: number of trees
+* `random_state=42`
+* Stratified train-test split to maintain class balance between pathogenic and benign variants during training.
