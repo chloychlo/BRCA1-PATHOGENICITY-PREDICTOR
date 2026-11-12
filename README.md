@@ -17,9 +17,9 @@ ___
 ## Model
 The classification pipeline is built using scikit-learn:
 
-**Model**: Random Forest classifier (`RandomForestClassifier`)
-**Library**: `scikit-learn` v1.2.0
-**Hyperparameters**:
-* `n_estimators=100`: number of trees
-* `random_state=42`
-* Stratified train-test split to maintain class balance between pathogenic and benign variants during training.
+* **Model**: Random Forest classifier (`RandomForestClassifier`)
+* **Library**: `scikit-learn` v1.2.0
+* **Hyperparameters**:
+  * `n_estimators=100`: number of trees
+  * `random_state=42`
+  * Stratified train-test split to maintain class balance between pathogenic and benign variants during training.
