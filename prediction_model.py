@@ -63,3 +63,16 @@ print(
         10
     )
 )
+
+#output file
+output_filename = "brca1_vus_predictino_results_random_forest.csv"
+
+output_df  =df_pred[
+    [
+        "variation_id", "hgvs_c", "hgvs_p",
+                     "aa_ref", "aa_pos", "aa_alt",
+                     "predicted_pathogenic_probability"
+    ]
+].copy()
+
+output_df.to_csv(output_filename, index=False)
