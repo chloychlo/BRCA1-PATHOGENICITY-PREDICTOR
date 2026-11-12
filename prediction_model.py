@@ -65,7 +65,7 @@ print(
 )
 
 #output file
-output_filename = "brca1_vus_predictino_results_random_forest.csv"
+output_filename = "brca1_vus_predictions_results_random_forest.csv"
 
 output_df  =df_pred[
     [
