@@ -23,7 +23,7 @@ probs = df["predicted_pathogenic_probability"]
 
 ax1.hist(probs, bins=30, color="#4A777A", edgecolor="white", alpha=0.85)
 ax1.axvline(
-    0.5, color="#C0392B", linestyle="--", linewidth=2, label="Seuil de décision (0.5)"
+    0.5, color="#C0392B", linestyle="--", linewidth=2, label="Decision threshold (0.5)"
 )
 
 n_patho = (probs >= 0.5).sum()
@@ -50,7 +50,7 @@ domains = [
 ]
 
 for name, start, end, color in domains:
-    ax2.axvspan(start, end, color=color, alpha=0.2, label=f"Domaine {name}")
+    ax2.axvspan(start, end, color=color, alpha=0.2, label=f"Domain {name}")
 
 df_sorted_pos = df.sort_values("aa_pos")
 ax2.scatter(
